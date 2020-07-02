@@ -1,0 +1,8 @@
+source/fonts/*.woff
+source/fonts/*.woff-2
+_normalize.scss
+source/sass/_normalize.scss
+*.svg
+questions-btn-Up-phone.svg
+source/img/*.svg
+

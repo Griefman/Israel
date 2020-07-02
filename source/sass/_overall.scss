@@ -1,0 +1,17 @@
+h1, h2, h3 {
+  color: $lightblue-color;
+}
+
+.button {
+  text-transform: uppercase;
+  padding: 15px 40px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  background: linear-gradient(146.13deg, #ffc341 20.46%, #ffd701 65.31%);
+  color: $white-color;
+}

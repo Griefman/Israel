@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Israel</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="page-header">
+  <div class="page-header__container">
+    <nav class="main-navigation">
+      <div class="page-header__phone main-navigation__item">
+        <a  class="page-header__phone-number" href="tel:+78005555555">+(972)2-621-6581</a>
+      </div>
+      <div class="page-header__order main-navigation__item">
+        <button type="button" class="page-header__order-btn ">заказать звонок</button>
+      </div>
+    </nav>
+
+
+    <div class="page-header__logo">
+      <img src="img/logo-desktop.svg" width="137" height="48" alt="Логотип" class="page-header__logo-image">
+    </div>
+  </div>
+</header>
+<main class="main-page">
+  <section class="main-screen">
+    <!-- 1х: 1366px; 2x: 906px -->
+    <div class="main-screen__container">
+      <img class="main-screen__image-big" width="1366" height="906" src="img/main-screen-desctop@1x.png" alt="Девушка" srcset="img/main-screen-desctop@2x.png">
+
+      <!-- 1х: 320px; 2x: 605px -->
+      <img class="main-screen__image-small" width="320" height="605" src="img/main-screen-phone@1x.png" alt="Девушка" srcset="img/main-screen-phone@2x.png">
+
+      <h1 class="main-screen__title">Учёба, путешествие и карьера для еврейской молодёжи </h1>
+      <div class="main-screen__scroll">
+        <a href="#" class="main-screen__scroll-btn">
+          <img src="img/btn-scroll-down-desctop.png" width="76" height="132"  alt="Скролл вниз" class="main-screen__scroll-image">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2 class="about__title">О программе</h2>
+    <p class="about__text">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле.  В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
+
+    <div class="about__video-container">
+      <img class="about__video-pic big-screen" width="870" height="460" src="img/programs-desktop@1x.png" alt="Девушка" srcset="img/programs-desktop@2x.png">
+
+      <!-- 1х: 320px; 2x: 605px -->
+      <img class="about__video-pic small-screen" width="320" height="224" src="img/programs-phone@1x.png" alt="Девушка" srcset="img/programs-phone@2x.png">
+
+      <div class="about__play">
+        <button class="about__play-btn">
+          <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.32" cx="48" cy="48" r="48" fill="white"/>
+            <circle cx="48" cy="48" r="32" fill="white"/>
+            <path d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
+  </section>
+
+</main>
+
+<div class="modal-order">
+  <div class="modal-order__close">
+    <button href="#" class="modal-order__close-btn" aria-label="Закрыть"><span class="visually-hidden">X</span></button>
+  </div>
+  <h3 class="modal-order__title">Заказать звонок </h3>
+  <p class="modal-order__text">
+    Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!
+  </p>
+  <form action="" id="form" class="modal-order__form">
+    <div class="modal-order__form-container">
+      <p class="modal-order__form-field">
+        <input type="text" id="modal-username"  class="modal-order__form-input" placeholder="Имя" required>
+      </p>
+
+      <p class="modal-order__form-field">
+        <input type="text" id="modal-phone" class="modal-order__form-input" placeholder="Телефон" required>
+      </p>
+    </div>
+
+
+    <div class="modal-order__wrapper">
+      <div class="agreement__wrapper">
+        <label for="modal-agreement" class="agreement__label">Нажимая на кнопку, вы даёте согласие на обработку персональных данных </label>
+        <input type="checkbox" id="modal-agreement" class="agreement__inp visually-hidden">
+      </div>
+
+      <button type="submit" class="button modal-order__btn"> перезвоните мне</button>
+
+    </div>
+
+
+  </form>
+</div>
+
+</body>
+</html>
