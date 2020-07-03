@@ -2,9 +2,9 @@
   position: relative;
   width: 100%;
   height: auto;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 20px;
+  padding-left: 8%;
+  padding-right: 8.5%;
+  padding-top: 49px;
   z-index: 10;
 }
 
@@ -39,11 +39,21 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  letter-spacing: 0.02em;
 }
+
+.page-header__phone:hover {
+  opacity: 0.5;
+}
+
+.page-header__phone-number:active {
+  outline: none;
+}
+
 
 .page-header__logo {
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: calc(50% - 68px);
   width: 137px;
   height: auto;
@@ -57,35 +67,56 @@
   display: block;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 16px;
   font-variant: small-caps;
   background: none;
   border: none;
   border-bottom: 2px dashed $black-color;
   cursor: pointer;
+  letter-spacing: 0.02em;
 }
 
+.page-header__order-btn:hover {
+  opacity: 0.5;
+}
 
+.page-header__order-btn:active {
+  outline: none;
+}
 
 @media (max-width: $tablet-width) {
   .page-header {
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 20px;
+    padding-top: 16px;
   }
 }
 
 @media (max-width: $mobile-width) {
+
+  .page-header {
+    padding-left: 8%;
+    padding-right: 3%;
+    padding-top: 22px;
+  }
+
   .main-navigation {
     width: 50%;
     flex-direction: column;
     margin-left: auto;
   }
 
+  .page-header__phone-number {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+  }
+
   .main-navigation__item {
     width: 100%;
     margin-left: auto;
+    margin-bottom: 5px;
   }
 
   .main-navigation__item > * {
@@ -96,8 +127,12 @@
     position: absolute;
     top: 20px;
     left: 5%;
-    width: 137px;
+    width: 120px;
     height: auto;
+  }
+
+  .page-header__order-btn {
+    letter-spacing: 0em;
   }
 
   .page-header__phone {

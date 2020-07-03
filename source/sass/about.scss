@@ -1,4 +1,16 @@
+.about {
+  width: 100%;
+  height: auto;
+  padding-bottom: 198px;
+  background-image: url("../img/programs-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: right 0 top 57%;
+  margin-top: -17px;
+}
+
 .about__title {
+  margin-bottom: 20px;
   font-family: $montserrat-font;
   font-style: normal;
   font-weight: bold;
@@ -13,6 +25,7 @@
   width: 52.7%;
   height: auto;
   margin: 0 auto;
+  margin-bottom: 47px;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -46,6 +59,16 @@
 .about__play-btn {
   background: transparent;
   border: none;
+  cursor: pointer;
+}
+
+.about__play-btn:active {
+  outline: none;
+}
+
+
+.about__play-btn:active .icon-play__circle-01 {
+  opacity: 0.5;;
 }
 
 @media (max-width: $tablet-width) {
@@ -59,6 +82,36 @@
 }
 
 @media (max-width: $mobile-width) {
+  .about {
+    margin-top: -12px;
+    padding-bottom: 85px;
+  }
+
+  .about__text {
+    width: 100%;
+    padding-left: 4.6%;
+    padding-right: 4.6%;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: left;
+  }
+
+  .about__video-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .about__play {
+    position: absolute;
+    top: calc(55% - 40px);
+    left: calc(50% - 40px);
+  }
+
+  .about__play-btn svg {
+    width: 80px;
+    height: 80px;
+  }
+
   .small-screen {
     display: block;
   }

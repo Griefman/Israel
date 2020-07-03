@@ -15,3 +15,18 @@ h1, h2, h3 {
   background: linear-gradient(146.13deg, #ffc341 20.46%, #ffd701 65.31%);
   color: $white-color;
 }
+
+.input {
+
+}
+
+.layout {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}

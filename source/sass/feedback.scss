@@ -1,0 +1,151 @@
+.feedback {
+  width: 100%;
+  min-height: 594px;
+  padding-left: 15.2%;
+  padding-right: 15%;
+  padding-top: 215px;
+  background-image: url("../img/form@1x-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+  background-size: 817px 594px;
+}
+
+.feedback__title {
+  margin-bottom: 24px;
+  font-family: $montserrat-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.feedback__text {
+  width: 40%;
+  margin-bottom: 60px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 170%;
+  opacity: 0.87;
+  background-color: $white-color;
+}
+
+.feedback__wrapper {
+  position: relative;
+  width: 480px;
+  height: auto;
+}
+
+.feedback__input {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  height: 60px;
+  padding-left: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  font-variant: small-caps;
+  opacity: 0.5;
+  border: 2px solid #e3e3e3;
+  border-radius: 30px;
+  background-color: $white-color;
+}
+
+.feedback__input::-webkit-input-placeholder {/*WebKitbrowsers*/
+  font-style: normal;
+  text-transform: uppercase;
+  color: $black-color;
+  opacity: 0.5;
+}
+
+.feedback__input:-moz-placeholder {/*MozillaFirefox4to18*/
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $black-color;
+  opacity: 0.5;
+}
+
+.feedback__input::-moz-placeholder {/*MozillaFirefox19+*/
+  font-size: 17px;
+  text-transform: uppercase;
+  color: $black-color;
+  opacity: 0.5;
+}
+
+.feedback__input:-ms-input-placeholder {/*InternetExplorer10+*/
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black-color;
+  opacity: 0.5;
+}
+
+.feedback__btn-submit {
+  position: absolute;
+  padding: 0;
+  width: 45%;
+  top: 0;
+  right: 0;
+  height: 60px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  font-variant: small-caps;
+  color: #FFFFFF;
+}
+
+@media (max-width: $tablet-width) {
+  .feedback {
+    background: none;
+  }
+
+  .feedback__text {
+    width: 70%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .feedback {
+    width: 100%;
+    min-height: 675px;
+    padding-left: 4.7%;
+    padding-right: 4.7%;
+    padding-top: 77px;
+    background-image: url("../img/form@1x-phone.png");
+    background-position: bottom 0 right 0;
+    background-size: 320px 308px;
+    background-repeat: no-repeat;
+  }
+
+  .feedback__wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .feedback__title {
+    width: 100%;
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+
+  .feedback__text {
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .feedback__btn-submit {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+  }
+}

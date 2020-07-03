@@ -1,10 +1,15 @@
 .modal-order {
+  display: none;
+  position: absolute;
   width: 480px;
   min-height: 520px;
+  top: calc(50vh - 240px);
+  left: calc(50vw - 240px);
   padding-left: 48px;
   padding-top: 32px;
   padding-right: 32px;
-  background-color: lightgrey;
+  background-color: $white-color;
+  z-index: 1000;
 }
 
 .modal-order__close-btn {
@@ -48,7 +53,10 @@
   font-size: 15px;
   line-height: 170%;
   margin-bottom: 32px;
+}
 
+.modal-order_text-break {
+  display: none;
 }
 
 .modal-order__form-field {
@@ -120,12 +128,84 @@
   font-size: 13px;
   line-height: 150%;
   opacity: 0.74;
-  padding-left: 50px;
+  padding-left: 60px;
   padding-right: 100px;
   background-image: url("../img/checkbox.png");
   background-repeat: no-repeat;
   background-size: 16px 16px;
-  background-position: 0 10px;
+  background-position: 35px 0;
 }
 
 
+
+@media (max-width: $mobile-width) {
+  .modal-order {
+    display: none;
+    width: 320px;
+    min-height: 768px;
+    top: calc(50vh - 160px);
+    left: calc(50vw - 160px);
+    padding: 15px;
+    padding-top: 24px;
+  }
+
+  .modal-order__close-btn {
+    margin-bottom: 120px;
+  }
+
+  .modal-order__title {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .modal-order__text {
+    width: 100%;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+  }
+
+  .modal-order_text-break {
+    display: block;
+  }
+
+  .modal-order__form-input {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    height: 60px;
+    padding-left: 30px;
+    border: 2px solid #E3E3E3;
+    border-radius: 30px;
+  }
+
+  .modal-order__form-input:last-child {
+    margin-bottom: 24px;
+  }
+
+  .modal-order__btn {
+    width: 264px;
+    min-height: 59px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    order: 1;
+  }
+
+  .agreement__label {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    opacity: 0.74;
+    padding-left: 35px;
+    padding-right: 10px;
+    background-position: 10px 0;
+  }
+}
