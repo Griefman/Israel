@@ -1,0 +1,298 @@
+.reviews {
+  position: relative;
+  padding-top: 130px;
+  height: auto;
+  background-image: url("../img/reviews-bg-sketch.png");
+  background-size: 523px 318px;
+  background-position: right 0 top 50%;
+  background-repeat: no-repeat;
+}
+
+.reviews__slider {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.slide__wrapper-left {
+  width: 34%;
+  padding-left: 7%;
+}
+
+.slide__image .big-screen {
+  width: 100%;
+  height: auto;
+}
+
+.slide__wrapper-right {
+  padding-top: 15px;
+  padding-left: 14px;
+  width: 65%;
+}
+
+.reviews__title {
+  text-align: center;;
+  font-family: $montserrat-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.slide__wrapper {
+  flex-direction: row;
+}
+
+.slide__content {
+  width: 100%;
+  height: auto;
+  margin-bottom: 53px;
+  padding-top: 3.4%;
+  padding-left: 2.7%;
+}
+
+.slide__name {
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: $black-color;
+  opacity: 0.74;
+}
+
+.slide__program {
+  margin-bottom: 28px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  color: $black-color;
+  opacity: 0.74;
+}
+
+.slide__program-blue {
+  margin-right: 8px;
+  color: $lightblue-color;
+}
+
+.slide__text {
+  margin-bottom: 24px;
+  padding-right: 22%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 170%;
+  color: $black-color;
+  opacity: 0.74;
+}
+
+.slide__text:nth-child(4) {
+  margin-bottom: 16px;
+}
+
+.slide__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 150%;
+  text-decoration-line: underline;
+  color: $lightblue-color;
+}
+
+.reviews__toggles {
+  display: flex;
+  width: 100%;
+  padding-left: 23px;
+}
+
+.controls {
+  width: 67%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.controls__count {
+  margin-right: 16px;
+}
+
+.controls__count-current,
+.controls__count-slash,
+.controls__count-max {
+  font-family: $fira-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #484848;
+  opacity: 0.5;
+}
+
+.controls__arrows {
+  padding-top: 5px;
+}
+
+.controls__arrows-left,
+.controls__arrows-right {
+  width: 18px;
+  height: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.controls__arrows-left:hover,
+.controls__arrows-right:hover {
+  opacity: 0.5;
+}
+
+.controls__arrows-left:active,
+.controls__arrows-right:active {
+  outline: none;
+}
+
+.controls__arrows-left {
+  margin-right: 8px;
+}
+
+.reviews__social {
+  width: 120px;
+  margin-top: 0;
+}
+
+.reviews__social-item {
+  opacity: 0.2;
+}
+
+.reviews__social-item:hover {
+  opacity: 0.1;
+}
+
+.reviews__social-item:active {
+  outline: none;
+}
+
+
+//--------- hidden ---------//
+.slide__wrapper {
+  display: none;
+}
+
+.slide__wrapper--visible {
+  display: flex;
+}
+
+.slide__image--small-screen {
+  display: none;
+}
+
+
+@media (max-width: $tablet-width) {
+
+}
+
+@media (max-width: $mobile-width) {
+  .reviews {
+    position: relative;
+    padding-top: 80px;
+    background-image: url("../img/reviews-sketch-phone.png");
+    background-size: 523px 318px;
+    background-position: right 0 top 50%;
+  }
+
+  .reviews__title {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 20px;
+  }
+
+  .reviews__slider {
+    flex-direction: column;
+  }
+
+  .slide__wrapper-left {
+    width: 100%;
+    padding-left: 12%;
+    padding-right: 12%;
+    margin-bottom: 30px;
+  }
+
+  .slide__wrapper-right {
+    width: 100%;
+    padding-left: 2%;
+  }
+
+  .slide__image--big-screen {
+    display: none;
+  }
+
+  .slide__image--small-screen {
+    display: block;
+    width: 304px;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .slide__content {
+    margin-bottom: 18px;
+  }
+
+  .slide__name {
+    margin-bottom: 10px;
+  }
+
+  .slide__program {
+    width: 400px;
+    font-size: 14px;
+    line-height: 160%;
+    margin-bottom: 20px;
+  }
+
+  .slide__program-blue {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  .slide__text {
+    font-size: 16px;
+    line-height: 160%;
+    padding-right: 5%;
+  }
+
+  .slide__text:nth-child(4) {
+    margin-bottom: 26px;
+  }
+
+  .slide__link {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 0;
+  }
+
+  .reviews__toggles {
+    padding: 0;
+    width: 100%;
+  }
+
+  .reviews__toggles .controls {
+    width: 30%;
+    position: absolute;
+    top: 53.9%;
+    left: calc(50% - 49px);
+  }
+
+  .controls__count-current,
+  .controls__count-slash,
+  .controls__count-max {
+    font-size: 17px;
+    line-height: 150%;
+  }
+}

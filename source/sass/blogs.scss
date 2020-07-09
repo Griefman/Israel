@@ -15,7 +15,7 @@
   height: auto;
 }
 
-.small-screen {
+.blogs__image--small-screen {
   display: none;
 }
 
@@ -120,11 +120,11 @@
   }
 
   //---------- toggles ---------
-  .big-screen {
+  .blogs__image--big-screen {
     display: none;
   }
 
-  .small-screen {
+  .blogs__image--small-screen {
     display: block;
   }
 

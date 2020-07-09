@@ -1,0 +1,237 @@
+.details {
+  width: 100%;
+  height: auto;
+  padding-left: 8%;
+  padding-top: 100px;
+  padding-bottom: 75px;
+  background-image: url("../img/details-map-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 702px 448px;
+  background-position: right 0 top 100px;
+}
+
+.details__container {
+  max-width: 1366px;
+  height: auto;
+  margin-left: auto;
+}
+
+.details__title {
+  margin-bottom: 50px;
+  font-family: $montserrat-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.details__location {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 33px;
+}
+
+.details__location-marker {
+  display: inline-block;
+  width: 12px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.details__location-param {
+  display: inline-block;
+  margin-right: 18px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
+  color: $black-color;
+  opacity: 0.74;
+}
+
+.details__location-city {
+  display: inline-block;
+  margin-top: 2px;
+  margin-right: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  font-variant: small-caps;
+  color: $black-color;
+  opacity: 0.74;
+  text-transform: uppercase;
+  border-bottom: 2px dashed $lightblue-color;
+}
+
+.details__location-plain {
+  display: inline-block;
+  margin-top: 1px;
+}
+
+.details__data {
+  padding-top: 4px;
+  padding-left: 2%;
+}
+
+.details__curator {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 28px;
+}
+
+.details__name {
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
+  color: $black-color;
+  opacity: 0.74;
+}
+
+.details__name-blue {
+  margin-right: 8px;
+  color: $lightblue-color;
+}
+
+.details__address {
+  width: 230px;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+}
+
+.details__social {
+  width: 110px;
+  margin-left: -10px;
+  }
+
+.details__description {
+  width: 480px;
+  margin-bottom: 130px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 170%;
+  color: $black-color;
+  opacity: 0.74;
+}
+
+//------------- Form ---------
+
+.details__feedback-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.details-form__header {
+  width: 360px;
+  margin-right: 1.5%;
+}
+
+.details-form__text {
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 150%;
+  color: $black-color;
+  opacity: 0.87;
+}
+
+.details-form__text:last-child {
+  margin-bottom: 0;
+}
+
+.details-form__text--opacity {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+//---------------------
+
+.details-form__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 61%;
+}
+
+.details-form__field {
+  position: relative;
+}
+
+.details-form__input {
+  width: 250px;
+  height: 60px;
+  padding-left: 30px;
+  border: 2px solid #e3e3e3;
+  border-radius: 30px;
+}
+
+.details-form__input:focus {
+  border: 2px solid #ffc341;
+  outline: none;
+}
+
+.details-form__small-name,
+.details-form__small-phone {
+  display: none;
+  position: absolute;
+  left: 30px;
+  bottom: -15px;
+}
+
+.details-form__input::-webkit-input-placeholder {/*WebKitbrowsers*/
+  font-style: normal;
+  text-transform: uppercase;
+  color: $black-color;
+  opacity: 0.5;
+}
+
+.details-form__input:-moz-placeholder {/*MozillaFirefox4to18*/
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $black-color;
+  opacity: 0.5;
+}
+
+.details-form__input::-moz-placeholder {/*MozillaFirefox19+*/
+  font-size: 17px;
+  text-transform: uppercase;
+  color: $black-color;
+  opacity: 0.5;
+}
+
+.details-form__input:-ms-input-placeholder {/*InternetExplorer10+*/
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black-color;
+  opacity: 0.5;
+}
+
+.details-form__btn {
+  display: block;
+  width: 216px;
+  padding-left: 0;
+  padding-right: 0;
+  height: 59px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  font-variant: small-caps;
+  color: $white-color;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}

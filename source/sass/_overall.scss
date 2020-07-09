@@ -30,3 +30,19 @@ h1, h2, h3 {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
+
+
+
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social-item {
+  display: flex;
+  justify-content: space-around;
+  width: 33%;
+  height: auto;
+}
