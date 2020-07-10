@@ -2,7 +2,7 @@
   width: 100%;
   height: auto;
   padding-left: 8%;
-  padding-top: 100px;
+  padding-top: 110px;
   padding-bottom: 75px;
   background-image: url("../img/details-map-desktop@1x.png");
   background-repeat: no-repeat;
@@ -171,6 +171,7 @@
 
 .details-form__field {
   position: relative;
+  margin-right: 25px;
 }
 
 .details-form__input {
@@ -339,6 +340,7 @@
   .details-form__field {
     width: 100%;
     margin-bottom: 8px;
+    margin-right: 0;
   }
 
   .details-form__field:nth-child(2) {

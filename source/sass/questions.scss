@@ -3,6 +3,11 @@
   height: auto;
   padding-top: 120px;
   padding-left: 8.1%;
+  padding-bottom: 95px;
+  background-image: url("../img/watercolor_Bg.png"),     url("../img/questions-bg-bag-desktop.png");
+  background-size: 100% 1119px, 153px 177px;
+  background-position: bottom -50 left 0, left 0 bottom 0;
+  background-repeat: no-repeat;
 }
 
 .questions__container {
@@ -36,7 +41,7 @@
 }
 
 .questions__item {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .question__row {
@@ -75,14 +80,15 @@
   border: none;
   margin-left: auto;
   margin-right: 8%;
-  background-image: url("../img/questions-btn-Down-desktop.svg");
+  background-color: transparent;
+  background-image: url("../img/questions-btn-Down-desktop.png");
   background-repeat: no-repeat;
   background-size: 16px 12px;
   background-position: 0 0;
 }
 
-.question__answer--visible .question__answer--visible {
-  background-image: url("../img/questions-btn-Up-desktop.svg");
+.question__answer--visible .question__btn {
+  background-image: url("../img/questions-btn-Up-desktop.png");
   background-repeat: no-repeat;
   background-size: 16px 12px;
   background-position: 0 0;
@@ -100,7 +106,7 @@
   opacity: 0.74;
 }
 
-.question__answer--visible {
+.question__answer--visible .question__answer{
   display: block;
 }
 

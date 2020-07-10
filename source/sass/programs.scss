@@ -3,6 +3,10 @@
   min-height: 480px;
   padding-left: 15.3%;
   padding-right: 23%;
+  background-image: url("../img/programs-sketch_Bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 680px 426px;
+  background-position: right 0 top 0;
 }
 
 .programs__wrapper {
@@ -35,8 +39,22 @@
   cursor: pointer;
 }
 
+.toggles__item:hover:not(:focus) {
+  color: $yellow-color;
+}
+
+.toggles__item:focus {
+  outline: none;
+}
+
+//.toggles__item:hover:not(:active) {
+//  outline: none;
+//  color: $yellow-color;
+//}
+
 .toggles__item-active {
   color: $white-color;
+  text-transform: uppercase;
   background-image: url("../img/programs-yellow-bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -44,18 +62,121 @@
 }
 
 .toggles__icon-wrapper {
-  display: flex;
-  justify-content: space-around;
   width: 31.1%;
-  height: auto;
+  height: 36px;
 }
 
-.toggles__item-name {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 18px
+.toggles__item:nth-child(1) .toggles__icon-wrapper {
+  background-image: url("../img/programs-stars-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 28px 33px;
+  background-position: center center;
 }
+
+.toggles__item:nth-child(1):hover:not(:focus) .toggles__icon-wrapper {
+  background-image: url("../img/programs-stars-desktop-hover.png");
+  background-repeat: no-repeat;
+  background-size: 28px 33px;
+  background-position: center center;
+}
+
+.toggles__item:nth-child(1):focus .toggles__icon-wrapper {
+  background-image: url("../img/programs-stars-desktop-active.png");
+  background-repeat: no-repeat;
+  background-size: 28px 33px;
+  background-position: center center;
+}
+
+.toggles__item:nth-child(2) .toggles__icon-wrapper {
+  background-image: url("../img/programs-academic-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 36px 35px;
+  background-position: center center;
+}
+
+.toggles__item:nth-child(2):hover:not(:focus) .toggles__icon-wrapper {
+  background-image: url("../img/programs-academic-desktop-hover.png");
+  background-repeat: no-repeat;
+  background-size: 36px 35px;
+  background-position: center center;
+}
+
+.toggles__item:nth-child(2):focus .toggles__icon-wrapper {
+  background-image: url("../img/programs-academic-desktop-active.png");
+  background-repeat: no-repeat;
+  background-size: 36px 35px;
+  background-position: center center;
+}
+
+.toggles__item:nth-child(3) .toggles__icon-wrapper {
+  background-image: url("../img/programs-portfel-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 32px 25px;
+  background-position: center center;
+}
+
+.toggles__item:nth-child(3):hover:not(:focus) .toggles__icon-wrapper {
+  background-image: url("../img/programs-portfel-desktop-hover.png");
+  background-repeat: no-repeat;
+  background-size: 32px 25px;
+  background-position: center center;
+}
+
+.toggles__item:nth-child(3):focus .toggles__icon-wrapper {
+  background-image: url("../img/programs-portfel-desktop-active.png");
+  background-repeat: no-repeat;
+  background-size: 32px 25px;
+  background-position: center center;
+}
+
+.toggles__item:nth-child(4) .toggles__icon-wrapper {
+  background-image: url("../img/programs-hands-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 32px 29px;
+  background-position: center center;
+}
+
+.toggles__item:nth-child(4):hover:not(:focus) .toggles__icon-wrapper {
+  background-image: url("../img/programs-hands-desktop-hover.png");
+  background-repeat: no-repeat;
+  background-size: 32px 29px;
+  background-position: center center;
+}
+
+.toggles__item:nth-child(4):focus .toggles__icon-wrapper {
+  background-image: url("../img/programs-hands-desktop-active.png");
+  background-repeat: no-repeat;
+  background-size: 32px 29px;
+  background-position: center center;
+}
+
+.toggles__item:nth-child(5) .toggles__icon-wrapper {
+  background-image: url("../img/programs-religion-deskop.png");
+  background-repeat: no-repeat;
+  background-size: 23px 25px;
+  background-position: center center;
+}
+
+.toggles__item:nth-child(5):hover:not(:focus) .toggles__icon-wrapper {
+  background-image: url("../img/programs-religion-deskop-hover.png");
+  background-repeat: no-repeat;
+  background-size: 23px 25px;
+  background-position: center center;
+}
+
+.toggles__item:nth-child(5):focus .toggles__icon-wrapper {
+  background-image: url("../img/programs-religion-deskop-active.png");
+  background-repeat: no-repeat;
+  background-size: 23px 25px;
+  background-position: center center;
+}
+
+//.toggles__item-name {
+//  font-style: normal;
+//  font-weight: normal;
+//  font-size: 15px;
+//  line-height: 18px
+//}
 
 
 .content__list {
@@ -139,6 +260,8 @@
     margin-right: 10px;
     background-image: none;
     border-radius: 30px;
+    font-size: 15px;
+    line-height: 19px;
   }
 
   .toggles__item-active {
@@ -153,10 +276,10 @@
     height: auto;
   }
 
-  .toggles__item-name {
-    font-size: 15px;
-    line-height: 19px;
-  }
+  //.toggles__item-name {
+  //  font-size: 15px;
+  //  line-height: 19px;
+  //}
 
   .toggles__icon-wrapper:last-child {
     margin-right: 0;

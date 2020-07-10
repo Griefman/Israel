@@ -1,15 +1,22 @@
 .terms {
+  background-image:
+  url("../img/terma-bg-stamp.png");
+  background-repeat: no-repeat;
+  background-size:216px 254px;
+  background-position: right 0 top 370px;
+}
+
+.terms__wrapper {
   width: 100%;
   max-width: 1366px;
   min-height: 870px;
   margin: 0 auto;
   padding-top: 200px;
   padding-right: 150px;
-  background-image: url("../img/description@1x-desktop.png"),
-    url("../img/terma-bg-stamp.png");
+  background-image: url("../img/description@1x-desktop.png");
   background-repeat: no-repeat;
-  background-size: 581px 707px, 216px 254px;
-  background-position: left 10px bottom 0, right 0 top 370px;
+  background-size: 581px 707px;
+  background-position: left 10px bottom 0;
 }
 
 .terms__container {
@@ -122,22 +129,25 @@
 
 
 @media (max-width: $tablet-width) {
-  .terms {
-    background-color: lightgray;
+  .terms__wrapper {
+    background: none;
   }
 
 }
 
 @media (max-width: $mobile-width) {
   .terms {
-    padding-top: 84px;
-    padding-left: 0%;
-    padding-right: 0%;
-    background-color: transparent;
     background-image:  url("../img/terms-bg-stamp-phone.png");
     background-repeat: no-repeat;
     background-size: 216px 199px;
     background-position: right 0 top 360px;
+  }
+
+  .terms__wrapper {
+    padding-top: 84px;
+    padding-left: 0%;
+    padding-right: 0%;
+    background-color: transparent;
   }
 
   .terms__container {
