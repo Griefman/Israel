@@ -228,6 +228,9 @@
     padding-left: 5%;
     padding-right: 3%;
     overflow: hidden;
+    background-image: url("../img/programs-sketch_phone.png");
+    background-size: 296px 201px;
+    background-position: right 0 top 100px;
   }
 
   .programs__wrapper {
@@ -275,11 +278,6 @@
     width: 50px;
     height: auto;
   }
-
-  //.toggles__item-name {
-  //  font-size: 15px;
-  //  line-height: 19px;
-  //}
 
   .toggles__icon-wrapper:last-child {
     margin-right: 0;

@@ -5,6 +5,7 @@ var btnOpen = document.querySelector('.page-header__order-btn');
 var btnClose = document.querySelector('.modal-order__close-btn');
 var btnCloseSuccesses = document.querySelector('.modal-successes__close-btn');
 var btnSubmitSuccesses = document.querySelector('.modal-successes__btn');
+
 var layout = document.querySelector('.layout');
 var body = document.querySelector('body');
 var form = document.querySelector('.modal-order__form')
@@ -14,6 +15,13 @@ var checkbox = form.querySelector('#modal-agreement');
 var errorNameMessage = document.querySelector('.small-name');
 var errorPhoneMessage = document.querySelector('.small-phone');
 var modalSuccesses = document.querySelector('.modal-successes');
+
+var formDetails = document.querySelector('.details-form__form')
+var userNameDetails = document.getElementById('details-username');
+var phoneDetails = document.getElementById('details-phone');
+// var checkbox = form.querySelector('#modal-agreement');
+var errorNameMessageDetails = document.querySelector('.details-form__error-name');
+var errorPhoneMessageDetails = document.querySelector('.details-form__error-phone');
 
 
 
@@ -69,6 +77,7 @@ layout.addEventListener('click', function () {
   closeModal();
   closeModalSuccesses();
 });
+
 
 function setNameFocus () {
   userName.style.border = "2px solid orange";
@@ -133,4 +142,67 @@ function validate (evt) {
 
 form.addEventListener('submit', function (evt) {
   validate(evt);
+})
+
+
+
+function setNameFocusDetails () {
+  userNameDetails.style.border = "2px solid orange";
+  errorNameMessageDetails.style.display = 'none';
+}
+
+function setPhoneFocusDetails () {
+  phoneDetails.style.border = "2px solid orange";
+  errorPhoneMessageDetails.style.display = 'none';
+}
+
+function checkNameFieldDetails () {
+  if(userNameDetails.value && userNameDetails.value.length > 2) {
+    userNameDetails.style.border = "2px solid black";
+    errorNameMessageDetails.style.display = 'none';
+  } else {
+    userNameDetails.style.border = "2px solid red";
+    errorNameMessageDetails.style.display = 'block';
+  }
+}
+
+function checkPhoneFieldDetails () {
+  if(phoneDetails.value && phoneDetails.value.length === 17) {
+    phoneDetails.style.border = "2px solid black";
+    errorPhoneMessageDetails.style.display = 'none';
+  } else {
+    phoneDetails.style.border = "2px solid red";
+    errorPhoneMessageDetails.style.display = 'block';
+  }
+}
+
+
+
+function validateDetails (evt) {
+  evt.preventDefault();
+  var count = 0;
+  if(!userNameDetails.value || userNameDetails.value.length < 3) {
+    userNameDetails.style.border = "2px solid red";
+    errorNameMessageDetails.style.display = 'block';
+    ++count;
+  }
+
+  if (phoneDetails.value.length !== 17) {
+    phoneDetails.style.border = "2px solid red";
+    errorPhoneMessageDetails.style.display = 'block';
+    ++count;
+  }
+
+  if (count > 0) {
+    return false;
+  } else {
+    modalSuccesses.style.display = 'block';
+    layout.style.display = 'block';
+    body.style.position = 'fixed';
+    return true;
+  }
+}
+
+formDetails.addEventListener('submit', function (evt) {
+  validateDetails(evt);
 })

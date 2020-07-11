@@ -21,7 +21,7 @@
   padding-left: 7%;
 }
 
-.slide__image .big-screen {
+.slide__image-reviews .big-screen {
   width: 100%;
   height: auto;
 }
@@ -47,7 +47,7 @@
   flex-direction: row;
 }
 
-.slide__content {
+.slide__content-reviews {
   width: 100%;
   height: auto;
   margin-bottom: 53px;
@@ -191,6 +191,15 @@
   display: none;
 }
 
+.slide__image-reviews,
+.slide__content-reviews {
+  display: none;
+}
+
+.slide__image-reviews--active,
+.slide__content-reviews--active {
+display: block;
+}
 
 @media (max-width: $tablet-width) {
 
@@ -199,7 +208,7 @@
 @media (max-width: $mobile-width) {
   .reviews {
     position: relative;
-    padding-top: 80px;
+    padding-top: 0;
     background-image: url("../img/reviews-sketch-phone.png");
     background-size: 523px 318px;
     background-position: right 0 top 50%;
@@ -218,10 +227,8 @@
   }
 
   .slide__wrapper-left {
-    //width: 100%;
     width: 320px;
     padding-left: 0%;
-    //padding-right: 12%;
     margin: 0 auto;
     margin-bottom: 35px;
   }
@@ -242,12 +249,12 @@
     height: 320px;
   }
 
-  .slide__image {
+  .slide__image-reviews {
     width: 100%;
     height: auto;
   }
 
-  .slide__content {
+  .slide__content-reviews {
     width: 100%;
     margin-bottom: 18px;
   }
@@ -295,7 +302,7 @@
   .reviews__toggles .controls {
     width: 100px;
     position: absolute;
-    top: 470px;
+    top: 386px;
     left: calc(50% - 49px);
   }
 

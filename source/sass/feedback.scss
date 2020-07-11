@@ -100,10 +100,20 @@
   color: #FFFFFF;
 }
 
+/*---------- add style ---------*/
+.feedback__error {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  color: red;
+}
 @media (max-width: $tablet-width) {
   .feedback {
     background: none;
   }
+
+
 
   .feedback__text {
     width: 70%;
@@ -119,8 +129,8 @@
     padding-top: 77px;
     background-image: url("../img/form@1x-phone.png"),
       url("../img/feedback-bg-bag-phone.png");
-    background-position: bottom 0 right 0, top 50px left 0;
-    background-size: 100% auto;
+    background-position: bottom 0 right 0, top 30px left 0;
+    background-size: 100% auto, 103px 188px;
     background-repeat: no-repeat;
   }
 
@@ -160,4 +170,5 @@
     max-width: 320px;
     margin: 0 auto;
   }
+
 }

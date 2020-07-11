@@ -143,15 +143,6 @@
   background-position: 35px 0;
 }
 
-//.agreement__label:before {
-// position: absolute;
-//  width: 16px;
-//  height: 16px;
-//  left: 0px;
-//  top: 0;
-//  border: 2px solid orange;
-//  z-index: 10000;
-//}
 
 .agreement__inp:not(:checked) ~ .agreement__label[for="modal-agreement"] {
   background-image: url("../img/checkbox.png");
@@ -174,13 +165,7 @@
 .agreement__inp:checked ~ .agreement__label[for="modal-agreement"]:before {
   background-image: url("../img/checkbox-checked.svg");
 }
-//input:invalid {
-//  border: 2px dashed red;
-//}
-//
-//input:valid {
-//  border: 2px solid black;
-//}
+
 .small-name,
 .small-phone {
   display: none;
@@ -195,7 +180,7 @@
     display: none;
     width: 320px;
     min-height: 768px;
-    top: calc(50vh - 160px);
+    top: 0;
     left: calc(50vw - 160px);
     padding: 15px;
     padding-top: 24px;
@@ -256,7 +241,7 @@
     font-size: 13px;
     line-height: 150%;
     opacity: 0.74;
-    padding-left: 35px;
+    padding-left: 50px;
     padding-right: 10px;
     background-position: 10px 0;
   }
