@@ -47,11 +47,6 @@
   outline: none;
 }
 
-//.toggles__item:hover:not(:active) {
-//  outline: none;
-//  color: $yellow-color;
-//}
-
 .toggles__item-active {
   color: $white-color;
   text-transform: uppercase;
@@ -62,8 +57,10 @@
 }
 
 .toggles__icon-wrapper {
+  position: relative;
   width: 31.1%;
   height: 36px;
+  z-index: 9999;
 }
 
 .toggles__item:nth-child(1) .toggles__icon-wrapper {
@@ -171,14 +168,6 @@
   background-position: center center;
 }
 
-//.toggles__item-name {
-//  font-style: normal;
-//  font-weight: normal;
-//  font-size: 15px;
-//  line-height: 18px
-//}
-
-
 .content__list {
   width: 65.5%;
   padding-top: 10px;
@@ -261,11 +250,13 @@
     padding-right: 15px;
     min-height: 48px;
     margin-right: 10px;
-    background-image: none;
+    //background-image: none;
     border-radius: 30px;
     font-size: 15px;
     line-height: 19px;
   }
+
+
 
   .toggles__item-active {
     text-transform: uppercase;
